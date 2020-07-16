@@ -1,0 +1,240 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+/*
+Colors
+#215585 - light blue 
+#0E2439 - dark blue
+
+#D93646 - light red
+#BF303E - dark red
+*/
+
+
+/* Navigation menu */
+nav {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #0E2439;
+    padding: 0;
+    width: 100vw;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+}
+
+nav a {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+nav #home:hover {
+    background-color: #D93646;
+}
+
+.subnav-btn { 
+    border: none;
+    color: white;
+    outline: none;
+    padding: 15px 0;
+    border-radius: 3px 3px 0 0;
+    background-color: #0E2439;
+    margin: 0;
+}
+
+.subnav-btn i {
+    margin-left: 5px;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: #BF303E;
+    z-index: 1;
+    text-align: left;
+    border-radius: 0 0 3px 3px;
+}
+
+.subnav-content a {
+    display: inline-block;
+    justify-content: center;
+    flex-wrap: wrap; 
+    color: white;
+    text-decoration: none;
+    border-radius: 0 0 3px 3px;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.subnav-content a:hover {
+    background-color: #D93646;
+}
+
+.navbar a:hover, .subnav:hover .subnav-btn {
+    background-color: #D93646;
+}
+
+
+
+/*Selections design*/
+
+section {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 50px 0;
+    background: linear-gradient(to bottom, #215585 0%,#0E2439 100%);
+    overflow: hidden;
+}
+
+
+
+section p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+}
+
+article {
+    margin: 50px;
+    padding: 50px; 
+    background-color: #215585;
+    border-radius: 3px;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    letter-spacing: -2px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+
+/* Grid design */
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+img {
+    width: 100%; 
+    border-radius: 3px;
+}
+
+.images div {
+    background-color: rgba(255,255,255,0.1);
+    text-align: center;
+    height: 100px;
+    padding-top: 40%;
+}
+
+
+/* Link See More */
+
+#link-to-be {
+    text-align: right;
+    padding-top: 10px;
+}
+
+#link-to-be a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px 3px 5px;
+    box-shadow: 3px 3px #BF303E;
+    border-radius: 1px;
+}
+
+#link-to-be i {
+    font-size: 20px;
+    vertical-align: text-bottom;
+}
+
+#link-to-be a:hover {
+    background-color: #D93646;
+    color: white; 
+}
+
+
+/*Contact red button*/
+
+.btn-contact {
+    background: #D93646;
+    position: fixed;
+    z-index: 1;
+    bottom: 80px;
+    right: -136px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.btn-contact a { 
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.btn-contact:hover {
+    opacity: 1;
+    transform: translateX(-125px);
+}
+
+
+/* Footer */
+
+#branding {
+    position: relative;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #0E2439;
+    width: 100%;
+    text-align: center;
+}
+
+#footer div {
+    margin-top: 10px;
+}
+
+#footer p {
+    margin: 10px;
+    text-align: inherit;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: italic;
+    color: rgba(255,255,255,0.4);
+}
+
+#footer i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: rgba(255,255,255,0.4);
+    
+}

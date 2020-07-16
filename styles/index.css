@@ -1,0 +1,305 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+/*
+Colors
+#215585 - light blue 
+#0E2439 - dark blue
+
+#D93646 - light red
+#BF303E - dark red
+*/
+
+
+/* Navigation menu */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #0E2439;
+    padding: 0;
+    width: 100vw;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+}
+
+nav a {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+nav a:hover {
+    background-color: #D93646;
+}
+
+
+/*Selections design*/
+
+section {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 50px 0;
+    background: linear-gradient(to bottom, #215585 0%,#0E2439 100%);
+}
+
+section p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+}
+
+article {
+    margin: 50px;
+    padding: 50px; 
+    background-color: #215585;
+    border-radius: 3px;
+    min-height: 300px;
+}
+
+article > p {
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* First page*/
+
+/* Header */
+#about-me {
+    background-color: #215585;
+    padding: 150px 0 150px 50px;
+    background-image: url(/images/ilona.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+}
+
+#about-me p {
+    font-style: italic;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#home > article > p > a {
+    white-space: nowrap;
+}
+
+/* About me*/
+
+h2 {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    letter-spacing: -2px;
+    text-align: left;
+    text-transform: uppercase
+}
+
+/* Home page design links */
+#home a {
+    padding: 2px 5px;
+    margin-right: 5px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 3px 3px #BF303E;
+    border-radius: 1px;
+}
+#home a:hover {
+    background-color: #D93646;
+    color: white; 
+}
+
+
+/* Project page*/
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: "a a b"
+                         "c d e";  
+}
+.web {
+    grid-area: a;
+}
+
+.project-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #D93646;
+    border-radius: 3px;
+    width: 100%; 
+}
+
+.project-grid a {
+    margin: 0;
+    padding: 100px 0;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    background-color: #BF303E;
+}
+
+
+/* Skills page*/
+
+#skills-cloud {
+    display: flex;
+}
+
+.skills-industrial, .skills-web, .skills-graphic {
+    display: inline-grid;
+    width: 100%;
+} 
+
+#skills-cloud p {
+    display: inline-grid;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0 20px 5px 0;
+    padding: 30px 15px;
+    border-radius: 3px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 3px;
+}
+
+
+/* Contact form */
+
+
+input[type="text"], input[type="email"], textarea {
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    border-left: 5px solid #D93646;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+} 
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+input[type="submit"] {
+    border: none;
+    color: white;
+    outline: none;
+    padding: 15px 20px;
+    border-radius: 3px;
+    background-color: #BF303E;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #D93646;
+}
+
+
+/*Contact red button*/
+
+.btn-contact {
+    background: #D93646;
+    position: fixed;
+    z-index: 1;
+    bottom: 80px;
+    right: -136px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.btn-contact a { 
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.btn-contact:hover {
+    opacity: 1;
+    transform: translateX(-125px);
+}
+
+
+/* Footer */
+
+#contact {
+    position: relative;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #0E2439;
+    width: 100%;
+    text-align: center;
+}
+
+#footer div {
+    margin-top: 10px;
+}
+
+#footer p {
+    margin: 10px;
+    text-align: inherit;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: italic;
+    color: rgba(255,255,255,0.4);
+}
+
+#footer i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: rgba(255,255,255,0.4);
+    
+}
