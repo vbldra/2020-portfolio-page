@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ilona's personal web page</title>
+        <link rel="stylesheet" href="/styles/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,100;1,300&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">My projects</a>
+            <a href="#skills">My skills</a>
+            <a href="#contact">My contacts</a>
+        </nav>
+
+        <main>
+            <section id="home">
+                <div id="about-me">
+                    <h1>Hello, I'm <span>Ilona</span></h1>
+                    <p>designer / developer</p>
+                </div>
+                <article>
+                    <h2>About me</h2>
+                    <p>My name is Ilona Avdiushkina. I'm from Saint-Petersburg Russia and currently living in Hamburg Germany.</p>
+                    <p>My work experience takes a long path from Optic Engineering, Industrial Designing, Graphic Designing, Web Designing. And now I'm learning how to be a good full-stack web developer.</p>
+                    <p>Feel free to take a look at <a href="#projects">my projects</a> or to <a href="#contact">contact with me</a> .</p>
+                </article>
+            </section>
+
+            <section id="projects">
+                <article>
+                    <h2>Projects</h2>
+                    <div class="project-grid">
+                        <div class="project-link web">
+                           <a href="projects.html#web-development">Web design/development</a>
+                        </div>
+                        <div class="project-link industrial">
+                            <a href="projects.html#industrial-design">Industrial design</a>
+                        </div>
+                        <div class="project-link design3d">
+                            <a href="projects.html#design3d">3d modelling</a>
+                        </div>
+                        <div class="project-link graphic">
+                            <a href="projects.html#graphic">Graphic design</a>
+                        </div>
+                        <div class="project-link branding">
+                            <a href="projects.html#branding">Branding</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="skills">
+                <article>
+                    <h2>Skills</h2>
+                    <div id="skills-cloud">
+                        <div class="skills-web">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skills-industrial">
+                            <p>SolidWorks</p>
+                            <p>ProEngineer</p>
+                            <p>PhotoView 360</p>
+                            <p>AutoCad</p>
+                            <p>3ds Max</p>
+                            <p>ZBrush</p>
+                        </div>
+                        <div class="skills-graphic">
+                            <p>Adobe Photoshop</p>
+                            <p>Adobe Illustrator</p>
+                            <p>Adobe Indesign</p>
+                            <p>Sketch</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section id="contact">
+                <article>
+                    <h2>Contact</h2>
+                    <p>Feel free to contact me at anytime via email</p>
+                    <form action="mailto:ilona.avdiushkina@gmail.com" method="post" enctype="text/plain">      
+                        <input type="text" name="fn" id="name" placeholder="Enter your name" required>
+                        <input type="email" id="email" placeholder="Enter email" name="email" required>
+                        <textarea name="msg" id="message-area" placeholder="Write me something" required></textarea>
+                        <input type="submit" value="Send a message">
+                    </form>
+                </article>
+                <div class="btn-contact">
+                    <a href="#contact">Contact with me</a>
+                </div>
+                <div id="footer">
+                    <div>
+                        <a href="mailto:ilona.avdiushkina@gmail.com"><i class="far fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/avdiushkina/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/vbldra" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.behance.net/vbldra" target="_blank"><i class="fab fa-behance"></i></a>
+                        <a href="https://www.instagram.com/event.horizon.art/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p>Ilona Avdiushkina</p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
