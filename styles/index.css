@@ -86,7 +86,7 @@ article > p {
 #about-me {
     background-color: #215585;
     padding: 150px 0 150px 50px;
-    background-image: url(/images/ilona.png);
+    background-image: url("../images/ilona.png");
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
